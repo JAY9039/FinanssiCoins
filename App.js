@@ -9,7 +9,6 @@ import {
   BottomSheetModalProvider,
 } from '@gorhom/bottom-sheet';
 import { getMarketData } from './services/cryptoService';
-
 const ListHeader = () => (
   <>
     <View style={styles.titleWrapper}>
@@ -35,7 +34,6 @@ export default function App() {
   }, [])
 
   const bottomSheetModalRef = useRef(null);
-
 
   //chart area
   const snapPoints = useMemo(() => ['50%'], []);
